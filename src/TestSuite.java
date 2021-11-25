@@ -14,8 +14,11 @@ public class TestSuite extends BaseTest{
     @Test
     public void amazonSearchFunction(){
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Dell Laptop");
-        driver.findElement(By.className("")).click();
+        driver.findElement(By.className("field-keywords")).click();
         driver.findElement(By.id("sp-cc-accept")).click();
+
+        System.out.println("changes made by Dhara");
+
 
 
 
