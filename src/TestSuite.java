@@ -17,9 +17,11 @@ public class TestSuite extends BaseTest{
         driver.findElement(By.className("field-keywords")).click();
         driver.findElement(By.id("sp-cc-accept")).click();
 
+        driver.findElement(By.name("Toaster")).sendKeys("Toaster");
+
         System.out.println("changes made by Dhara");
 
-
+        System.out.println("2nd change by DD");
 
 
 
