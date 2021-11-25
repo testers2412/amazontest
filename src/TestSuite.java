@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,15 +15,13 @@ public class TestSuite extends BaseTest{
     @Test
     public void amazonSearchFunction(){
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Dell Laptop");
-        driver.findElement(By.className("")).click();
+
+        driver.findElement(By.id("twotabsearchtextbox")).click();
         driver.findElement(By.id("sp-cc-accept")).click();
-
-
-
-
-
-
-
+    }
+    @After
+    public void tearDown(){
+        closeBrowser();
     }
 
 
