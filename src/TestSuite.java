@@ -17,6 +17,7 @@ public class TestSuite extends BaseTest{
         driver.findElement(By.className("")).click();
         driver.findElement(By.id("sp-cc-accept")).click();
 
+        New change CP
 
 
 
