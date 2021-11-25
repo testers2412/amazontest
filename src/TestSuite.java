@@ -1,4 +1,3 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,14 +13,24 @@ public class TestSuite extends BaseTest{
     }
     @Test
     public void amazonSearchFunction(){
+        //New change CP
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Dell Laptop");
 
-        driver.findElement(By.id("twotabsearchtextbox")).click();
+        driver.findElement(By.className("")).click();
         driver.findElement(By.id("sp-cc-accept")).click();
-    }
-    @After
-    public void tearDown(){
-        closeBrowser();
+
+        //second change CP
+
+
+        driver.findElement(By.className("xyz123")).click();
+
+        driver.findElement(By.id("sp-cc-accept")).click();
+        System.out.println(12345);  //shama change1
+
+        System.out.println("*****************************************");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++");
+
+
     }
 
 
